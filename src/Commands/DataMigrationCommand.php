@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace MuhammadAbdElHay\DataMigration\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class DataMigrationCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'data-migration';
 
     public $description = 'My command';
 
