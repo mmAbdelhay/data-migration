@@ -22,13 +22,17 @@ class DataMigrationModel extends Model
         'table_from',
         'to_type',
         'table_to',
-        'table_url',
         'columns_from',
-        'columns_to'
+        'columns_to',
+        'api_url',
+        'api_method',
+        'api_access_token',
+        'api_payload',
     ];
 
     protected $casts = [
         'columns_from' => 'array',
         'columns_to' => 'array',
+        'api_payload' => 'array',
     ];
 }

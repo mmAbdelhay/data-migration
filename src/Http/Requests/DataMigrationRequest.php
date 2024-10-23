@@ -17,12 +17,15 @@ class DataMigrationRequest extends FormRequest
         return [
             'table_from' => ['required', 'string'],
             'to_type' => ['required', 'string', 'in:table,api'],
+
             'table_to' => ['string', 'required_if:to_type,table'],
-            'table_url' => ['string', 'required_if:to_type,api'],
             'columns_from' => ['nullable', 'array'],
-            'columns_from.*' => ['string'],
-            'columns_to' => ['array', 'nullable'],
-            'columns_to.*' => ['string'],
+            'columns_to' => ['nullable', 'array'],
+
+            'api_url' => ['string', 'required_if:to_type,api'],
+            'api_method' => ['nullable', 'string'],
+            'api_access_token' => ['nullable', 'string'],
+            'api_payload' => ['nullable', 'array'],
         ];
     }
 }

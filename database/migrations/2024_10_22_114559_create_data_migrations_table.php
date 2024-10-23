@@ -15,11 +15,15 @@ return new class extends Migration
             $table->id();
             $table->string('table_from');
             $table->enum('to_type', ['table', 'api'])->default('table');
-            $table->string('table_to')->nullable();
-            $table->string('table_url')->nullable();
 
+            $table->string('table_to')->nullable();
             $table->json('columns_from');
             $table->json('columns_to')->nullable();
+
+            $table->string('api_url')->nullable();
+            $table->string('api_method')->nullable();
+            $table->text('api_access_token')->nullable();
+            $table->json('api_payload')->nullable();
 
             $table->timestamps();
             $table->softDeletes();
