@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('table_from');
             $table->enum('to_type', ['table', 'api'])->default('table');
             $table->string('table_to')->nullable();
+            $table->string('table_url')->nullable();
 
             $table->json('columns_from');
             $table->json('columns_to')->nullable();
