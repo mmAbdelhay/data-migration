@@ -24,7 +24,7 @@ class DataMigrationModel extends Model
         'table_to',
         'table_url',
         'columns_from',
-        'columns_to'
+        'columns_to',
     ];
 
     protected $casts = [

@@ -2,7 +2,6 @@
 
 namespace MuhammadAbdElHay\DataMigration\Http\Requests;
 
-
 use Illuminate\Foundation\Http\FormRequest;
 
 class DataMigrationRequest extends FormRequest
