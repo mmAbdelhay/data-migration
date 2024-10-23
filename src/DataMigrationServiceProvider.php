@@ -2,9 +2,9 @@
 
 namespace MuhammadAbdElHay\DataMigration;
 
+use MuhammadAbdElHay\DataMigration\Commands\DataMigrationCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use MuhammadAbdElHay\DataMigration\Commands\DataMigrationCommand;
 
 class DataMigrationServiceProvider extends PackageServiceProvider
 {
