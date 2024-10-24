@@ -21,5 +21,10 @@ class DataMigrationServiceProvider extends PackageServiceProvider
             ->hasViews()
             ->hasMigration('create_data_migration_table')
             ->hasCommand(DataMigrationCommand::class);
+
+        $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
+        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'data-migration');
     }
+
 }
